@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+form{
+margin-left:150px;
+background-color:powderblue;
+margin-right:250px;
+}
+</style>
+<script>
+function validation()
+{
+var name= document.forms["regform"]["name1"];
+var adress= document.forms["regform"]["address1"];
+var email= document.forms["regform"]["mail"];
+var age= document.forms["regform"]["age1"];
+var tphone= document.forms["regform"]["phone"];
+var g=document.forms["regform"]["Gender"];
+var s= document.forms["regform"]["state"];
+</head>
+<body>
+<form name="regform" action="/submit.php" onsubmit="return validation()">
+Name: <input type="text" name="name1"/>
+<br>
+Age: <input type="text" name="age1"/>
+<br>
+Gender: <input type="radio" name="Gender" value="male">Male
+<input type="radio" name="Gender" value="female">Female
+<br>
+Adress: <textarea cols="50" rows="5" name="address1">
+</textarea>
+<br>
+State: <select name="state">
+<option name="select">Select</option>
+<option name="kerala">Kerala</option>
+<option name="karnataka">Karnataka</option>
+<option name="ap">Andhra pradesh</option>
+<option name="tn">Tamil Nadu</option>
+</select>
+<br>
+Mobile no: <input type="text" name="phone">
+<br>
+Email_id: <input type="email" name="mail">
+<br>
+<input type="submit" name="sub" value="send">
+</form>
+</body>
+</html> 
